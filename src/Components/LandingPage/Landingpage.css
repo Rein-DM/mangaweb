@@ -1,0 +1,214 @@
+.main-container {
+    background-color: #fff;
+    
+}
+.container {
+    height: 100vh;
+    width: 100%;
+    background-color: #60C0D8;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-bottom-right-radius: 80px 80px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 0.5rem;
+}
+
+.navbar-left {
+    font-size: 50px;
+    font-weight: 800;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 30px;
+    gap: 20px;
+    
+}
+
+.navbar-left a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.navbar-list{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin-left: 15rem;
+
+}
+
+.navbar-list li {
+    margin-right: 1rem;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.content-left,
+.content-right {
+  flex: 1;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 50px;
+    margin-left: 13%;
+    
+}
+.content-left {
+    text-align: left;
+    width: 60%;
+}
+.title p{
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.desc-container {
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10;
+}
+
+.desc p{
+    margin-top: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.content-right {
+    width: 40%;
+    display: flex;
+    
+}
+
+.img-animanga {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.get-container {
+    display: flex;
+    gap: 30px;
+    margin: 50px auto;
+}
+
+.getbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height: 80;
+    color: #60C0D8;
+    background: #fff;
+    border-radius: 30px;
+    font-size: 30px;
+    font-weight: 800;
+    cursor: pointer;
+    padding: 20px 20px;
+     box-shadow: 10px 10px 2px 2px rgba(0, 0, 0, 0.2);     ;
+}
+
+.animanga-features {
+    color: black;
+}
+
+.collab-feature {
+    margin-top: 30px;
+    gap: 30px;
+    display: flex;
+    justify-content: left;
+    text-align: right;
+}
+
+.collab_animes {
+    height: 1080px;
+    width: 600px;
+}
+
+.title-feature {
+    font-size: 42px;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 5%;
+}
+
+
+.features-number {
+    padding-left: 5%;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    
+}
+
+.features-header {
+    display: flex;
+    align-items: center;    /* Align number and title vertically in the center */
+    gap: 40px;              /* Space between number and title */
+    margin-bottom: 10px;   
+    width: 100%;
+  }
+
+.features-desc {
+    width: 80%;
+    padding-left: 3%;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;     /* Left the description text */
+    
+}
+
+.numb {
+    display: flex;
+    width: 51px;
+    height: 51px;
+    align-items: center;  
+    justify-content: center;
+    border-radius: 50%;  
+    border: 2px solid #666;
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+}
+
+.numb::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    width: 2px;
+    height: 205px; /* Adjust the height as needed */
+    background: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 5px,
+      #000 5px,
+      #000 20px
+    );
+    transform: translateX(-50%); /* Center the line horizontally */
+  }
+.features-number:last-of-type .numb::after {
+    display: none; /* Removes the line for the last .numb */
+}
+
+
+
+
+
+
